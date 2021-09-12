@@ -107,6 +107,9 @@ a:hover{
     font-family: 'Raleway', sans-serif;
 }
 
+.quard_container{
+    width: 25%;
+}
 
 
 /* Home Page Designing */
@@ -417,8 +420,8 @@ button{
     color: #08757A;;
 }
 .main-container{
-width: auto;
-padding: 60px;
+    width: auto;
+    padding: 60px;
 }
 
 .sub_container{
