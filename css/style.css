@@ -269,6 +269,7 @@ button{
     line-height: 1.6;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -426,4 +427,138 @@ form .form-row .textarea{
     cursor: pointer;
     position: relative;
     z-index: 2;
+=======
+/* about Us */
+.about_head{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size:medium;
+}
+
+.about_head p {
+    margin: 10px;
+    width: 800px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.icon_card_container{
+    margin-top: 40px;
+}
+
+.about_iconSection{
+    display: flex;
+    /* border: red solid 2px; */
+    width: 70%;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.about_iconSection img {
+    width: 50%;
+    position: relative;
+    top: 25%;
+}
+
+.icon_card{
+    width: 45%;
+    height: 180px;
+    background-color: #08757a;
+    /* border:solid 1px yellow ; */
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.icon_card_container{
+    /* border:solid 1px yellow ; */
+    text-align: center;
+    width: 30%;
+}
+
+.icon_card_container h2{  
+    /* border: yellowgreen solid 2px; */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.icon_card_container p{
+  padding: 10px;
+  /* border: yellowgreen solid 1px; */
+  line-height: 1.5;
+}
+
+/* sub section */
+
+.about_SecondSection{
+    margin-top: 70px;
+}
+.SS_Sub_Section{
+    display: flex;
+    width: 1200px;
+    /* border: violet solid 1px; */
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.SS_Image {
+    width: 50%;
+    /* border: red solid 1px; */
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.SS_Article{
+    width: 50%;
+    /* border: #191919 solid 1px; */
+    padding: 10px;
+    box-sizing: border-box;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.SS_Article h2{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.SS_Article p{
+    width: 60%;
+    padding: 20px 20px 20px 0;
+    line-height: 1.6;
+}
+.SS_Image img {
+    width: 60%;
+
+    height: 350px;
+}
+
+#firstArticle{
+    border-left: #cccccc solid 1px;
+    border-bottom: #cccccc solid 1px;
+    border-radius: 10px;
+}
+
+#secondImage{
+    border-right:#cccccc solid 1px;
+    border-bottom:#cccccc solid 1px;
+    border-radius: 10px;
+}
+
+#thirdArticle{
+    border-left: #cccccc solid 1px;
+    border-radius: 10px;
+>>>>>>> 5fb212a16b5635ffa5c1a52ba2d66f919c5c0f07
 }
