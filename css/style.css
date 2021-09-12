@@ -12,7 +12,6 @@ div, p, a, ul, h1,h2,h3,h4,h5{
 header{
     width: auto;
     display: flex;
-    font-family: 'Rubik',sans-serif;
     font-weight: 400;
     /* border: solid 1px black ; */
 }
@@ -37,10 +36,10 @@ header{
 
 /* Menu Designing */
 #menu{    
+    font-family:'Nunito',sans-serif ;
     float: right;
     width: 100%;
     font-size: 16px;
-    font-weight: 500;
     color: black;
     margin: 20px;
     /* border: solid 1px green ; */
@@ -97,6 +96,7 @@ a:hover{
     cursor: pointer;
 }
 
+/***************************************************/
 /* Common Classes */
 .container{
     display: flex;
@@ -106,6 +106,8 @@ a:hover{
     /* border: #08757A solid 1px; */
     font-family: 'Raleway', sans-serif;
 }
+
+
 
 /* Home Page Designing */
 #main_text {
@@ -269,6 +271,8 @@ button{
     line-height: 1.6;
 }
 
+/***************************************************/
+/* About Page Styling */
 .about_head{
     width: 1200px;
     margin-right: auto;
@@ -337,7 +341,7 @@ button{
   line-height: 1.5;
 }
 
-/* sub section */
+/* About Us sub section */
 
 .about_SecondSection{
     margin-top: 70px;
@@ -401,6 +405,9 @@ button{
     border-left: #cccccc solid 1px;
     border-radius: 10px;
 }
+
+/***************************************************/
+
 /* Contact Page Designing */
 
 #contact_heading{
@@ -413,6 +420,7 @@ button{
 width: auto;
 padding: 60px;
 }
+
 .sub_container{
     width: 50%;
     /* border: solid 1px black; */
@@ -449,7 +457,7 @@ address{
     font-style: 50px;
 }
 .sub_container form{
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Nunito',sans-serif;
 }
 
 .sub_container form .form-row{
@@ -463,6 +471,7 @@ form .form-row .input-data{
     margin: 0 20px;
     position: relative;
     border:none;
+    font-weight: 400;
 }
 
 form .form-row .textarea{
@@ -471,19 +480,21 @@ form .form-row .textarea{
   
 .input-data input,
 .textarea textarea{
+    font-family:'Nunito',sans-serif ;
     display: block;
     width: 100%;
     height: 100%;
     border: none;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 400;
     border-bottom: 1px solid rgba(0,0,0, 0.12);
 }
 
 .input-data input:focus ~ label, .textarea textarea:focus ~ label,
 .input-data input:valid ~ label, .textarea textarea:valid ~ label{
     transform: translateY(-20px);
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 800;
     color: #08757A;
 }
   
@@ -502,15 +513,15 @@ form .form-row .textarea{
 .textarea label{
     width: 100%;
     bottom: 40px;
-    background: #fff;
 }
   
 .input-data .underline{
     position: absolute;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
+    bottom : 0; 
+    height: 2px; 
+    width: 100%; 
 }
+
   
 .input-data .underline:before{
     position: absolute;
@@ -521,38 +532,36 @@ form .form-row .textarea{
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
-  
 }
   .input-data input:focus ~ .underline:before,
   .input-data input:valid ~ .underline:before,
   .textarea textarea:focus ~ .underline:before,
   .textarea textarea:valid ~ .underline:before{
     transform: scale(1);
-    border :none !important;
-}
-  .submit-btn .input-data{
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    height: 45px!important;
-    width: 25%!important;
-    border-radius: 50px;
-    background-color: #08757A;
-  }
-  .submit-btn:hover .input-data:hover .inner{
-    left: 0;
-    background-color: #191919;
 }
 
+.submit-btn .input-data{
+    overflow: hidden;
+    height: 40px!important;
+    width: 20%!important;
+    border-radius: 50px;
+    background-color: #08757A;
+}
+
+
 .submit-btn .input-data input{
-    background: none;
+    background-color: #08757A;
     border: none;
     color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
     cursor: pointer;
     position: relative;
-    z-index: 2;
+    text-transform: uppercase;
+}
+
+#submit_btn:hover{
+    font-weight: 400;
+    background-color: black;
 }
