@@ -11,7 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,700&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@462&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@462&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +35,7 @@
             <div class="menu-line">
                 <div class="circle"></div>
                 <hr class="menu_line">
-        </div>
+            </div>
     </header>
     <div class="main-container">
         <div id="contact_heading">
@@ -41,7 +43,7 @@
         </div>
         <div class="container">
             <div class="sub_container">
-                <span>Give us a shout, </br> we'll make you believer.</span>
+                <span id="main_contact_heading">Give us a shout, </br> we'll make you believer.</span>
                 <div class="container">
                     <div class="sub_container">
                         <span class="address_heading">NEW BUSINESS</span>
@@ -60,10 +62,80 @@
                 </div>
             </div>
             <div class="sub_container">
-                <img src="" alt="">
+                <form action="#">
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">First Name</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data textarea">
+                            <textarea rows="8" cols="80" required></textarea>
+                            <div class="underline"></div>
+                            <label for="">Write your message</label>
+                        </div>
+                    </div>
+                    <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <input id="submit_btn" type="submit" value="submit">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="quard_container">
+                <img src="img/logo.jpeg" alt="">
+                <span id="company_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio vero aspernatur quod dolorum
+                    natus accusantium voluptas voluptatem? Doloribus, tenetur!</span>
+                <span>Copyright 2021</span>
+            </div>
+            <div class="quard_container">
+                <div class="footer_sub_heading">QUICK LINKS</div>
+                <div class="footer_content">
+                    HOME</br>
+                    ABOUT</br>
+                    SERVICES</br>
+                    CONTACT
+                </div>
+            </div>
+            <div class="quard_container">
+                <div class="footer_sub_heading">CONTACT US</div>
+                <div class="footer_content">
+                    <a href=""><i class="fas fa-map-marker-alt"></i>Google Map</a>
+                    <a href=""><i class="fas fa-envelope"></i>support@quetzal.com</a>
+                </div>
+
+            </div>
+            <div class="quard_container">
+                <div class="footer_sub_heading">SOCIAL</div>
+                <div class="footer_content">
+                    <div id="footer_social">
+                        <a href=""><i class="fab  fa-twitter"></i></a>
+                    <a href=""><i class="fab  fa-facebook-f"></i></a>
+                    <a href=""><i class="fab  fa-github"></i></a>
+                    <a href=""><i class="fab  fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

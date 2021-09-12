@@ -7,14 +7,17 @@ div, p, a, ul, h1,h2,h3,h4,h5{
     margin: 0px;
     padding: 0px;
 }
+
+/* Header Designing */
 header{
     width: auto;
     display: flex;
-    font-family: 'Rubik',sans-serif;
     font-weight: 400;
     /* border: solid 1px black ; */
 }
 
+
+/* Logo Designing */
 #logo{
     width: 20%;
     padding-left: 50px;
@@ -30,11 +33,13 @@ header{
     width: 80%;
     /* border: solid 1px black ; */
 }
+
+/* Menu Designing */
 #menu{    
+    font-family:'Nunito',sans-serif ;
     float: right;
     width: 100%;
     font-size: 16px;
-    font-weight: 500;
     color: black;
     margin: 20px;
     /* border: solid 1px green ; */
@@ -91,6 +96,8 @@ a:hover{
     cursor: pointer;
 }
 
+/***************************************************/
+/* Common Classes */
 .container{
     display: flex;
     width: auto;
@@ -100,6 +107,12 @@ a:hover{
     font-family: 'Raleway', sans-serif;
 }
 
+.quard_container{
+    width: 25%;
+}
+
+
+/* Home Page Designing */
 #main_text {
     padding-top: 80px;
     width: 55%;
@@ -148,48 +161,6 @@ button{
  /* border: solid black 1px;  */
  left: 0;
 }
-
-#contact_heading{
-    font-size: 14px;
-    padding-left: 40px;
-    font-weight: 600;
-    color: #08757A;;
-}
-.main-container{
-width: auto;
-padding: 60px;
-}
-.sub_container{
-    width: 50%;
-    /* border: solid 1px black; */
-    padding-top: 20px;
-}
-.sub_container span{
-    font-size: 36px;
-    font-weight: 600;
-    padding-top: 80px;
-}
-.sub_container .address_heading{
-    font-size: 12px;
-    font-weight: 600;
-    color: black;
-}
-address{
-    font-weight: 400;
-    color: #08757A;;
-    text-decoration: none;
-    font-style: normal;
-    padding-top: 20px;
-}
-.contact_icons{
-    display: flex;
-    padding-left:40px ;
-}
-.contact_icons i{
-    padding: 10px;
-    font-style: 50px;
-}
-
 
 /* steps styling */
 
@@ -303,7 +274,8 @@ address{
     line-height: 1.6;
 }
 
-/* about Us */
+/***************************************************/
+/* About Page Styling */
 .about_head{
     width: 1200px;
     margin-right: auto;
@@ -372,7 +344,7 @@ address{
   line-height: 1.5;
 }
 
-/* sub section */
+/* About Us sub section */
 
 .about_SecondSection{
     margin-top: 70px;
@@ -438,6 +410,7 @@ address{
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
 .circle_about{
     border: solid 1px #08757A;
     background-color: rgba(8, 117, 122,0.2);
@@ -454,4 +427,164 @@ address{
 #third_circle{
     top: 20%;
     left: -1%;
+=======
+/***************************************************/
+
+/* Contact Page Designing */
+
+#contact_heading{
+    font-size: 14px;
+    padding-left: 40px;
+    font-weight: 600;
+    color: #08757A;;
+}
+.main-container{
+    width: auto;
+    padding: 60px;
+}
+
+.sub_container{
+    width: 50%;
+    /* border: solid 1px black; */
+    padding: 0;
+}
+.sub_container span{
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 80px;
+    /* border: solid 1px black; */
+}
+.sub_container #main_contact_heading{
+    padding-top: 40px;
+    /* border: solid 1px red; */
+}
+.sub_container .address_heading{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+address{
+    font-weight: 400;
+    color: #08757A;;
+    text-decoration: none;
+    font-style: normal;
+    padding-top: 20px;
+}
+.contact_icons{
+    display: flex;
+    padding-left:40px ;
+}
+.contact_icons i{
+    padding: 10px;
+    font-style: 50px;
+}
+.sub_container form{
+    font-family: 'Nunito',sans-serif;
+}
+
+.sub_container form .form-row{
+    display: flex;
+    margin: 32px 0;
+}
+
+form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+    border:none;
+    font-weight: 400;
+}
+
+form .form-row .textarea{
+    height: 70px;
+}
+  
+.input-data input,
+.textarea textarea{
+    font-family:'Nunito',sans-serif ;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0,0,0, 0.12);
+}
+
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 16px;
+    font-weight: 800;
+    color: #08757A;
+}
+  
+.textarea textarea{
+    resize: none;
+    padding-top: 10px;
+}
+  
+.input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+.textarea label{
+    width: 100%;
+    bottom: 40px;
+}
+  
+.input-data .underline{
+    position: absolute;
+    bottom : 0; 
+    height: 2px; 
+    width: 100%; 
+}
+
+  
+.input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #08757A;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before,
+  .textarea textarea:focus ~ .underline:before,
+  .textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+}
+
+.submit-btn .input-data{
+    overflow: hidden;
+    height: 40px!important;
+    width: 20%!important;
+    border-radius: 50px;
+    background-color: #08757A;
+}
+
+
+.submit-btn .input-data input{
+    background-color: #08757A;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#submit_btn:hover{
+    font-weight: 400;
+    background-color: black;
+>>>>>>> 93075b37249de6d1ba47a0a2c8dd7034023768c7
 }
