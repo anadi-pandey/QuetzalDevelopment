@@ -7,6 +7,8 @@ div, p, a, ul, h1,h2,h3,h4,h5{
     margin: 0px;
     padding: 0px;
 }
+
+/* Header Designing */
 header{
     width: auto;
     display: flex;
@@ -15,6 +17,8 @@ header{
     /* border: solid 1px black ; */
 }
 
+
+/* Logo Designing */
 #logo{
     width: 20%;
     padding-left: 50px;
@@ -30,6 +34,8 @@ header{
     width: 80%;
     /* border: solid 1px black ; */
 }
+
+/* Menu Designing */
 #menu{    
     float: right;
     width: 100%;
@@ -91,6 +97,7 @@ a:hover{
     cursor: pointer;
 }
 
+/* Common Classes */
 .container{
     display: flex;
     width: auto;
@@ -100,6 +107,7 @@ a:hover{
     font-family: 'Raleway', sans-serif;
 }
 
+/* Home Page Designing */
 #main_text {
     padding-top: 80px;
     width: 55%;
@@ -148,48 +156,6 @@ button{
  /* border: solid black 1px;  */
  left: 0;
 }
-
-#contact_heading{
-    font-size: 14px;
-    padding-left: 40px;
-    font-weight: 600;
-    color: #08757A;;
-}
-.main-container{
-width: auto;
-padding: 60px;
-}
-.sub_container{
-    width: 50%;
-    /* border: solid 1px black; */
-    padding-top: 20px;
-}
-.sub_container span{
-    font-size: 36px;
-    font-weight: 600;
-    padding-top: 80px;
-}
-.sub_container .address_heading{
-    font-size: 12px;
-    font-weight: 600;
-    color: black;
-}
-address{
-    font-weight: 400;
-    color: #08757A;;
-    text-decoration: none;
-    font-style: normal;
-    padding-top: 20px;
-}
-.contact_icons{
-    display: flex;
-    padding-left:40px ;
-}
-.contact_icons i{
-    padding: 10px;
-    font-style: 50px;
-}
-
 
 /* steps styling */
 
@@ -301,4 +267,163 @@ address{
     width: 90%;
     color: #191919;
     line-height: 1.6;
+}
+
+
+
+
+
+/* Contact Page Designing */
+#contact_heading{
+    font-size: 14px;
+    padding-left: 40px;
+    font-weight: 600;
+    color: #08757A;;
+}
+.main-container{
+width: auto;
+padding: 60px;
+}
+.sub_container{
+    width: 50%;
+    /* border: solid 1px black; */
+    padding: 0;
+}
+.sub_container span{
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 80px;
+    /* border: solid 1px black; */
+}
+.sub_container #main_contact_heading{
+    padding-top: 40px;
+    /* border: solid 1px red; */
+}
+.sub_container .address_heading{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+address{
+    font-weight: 400;
+    color: #08757A;;
+    text-decoration: none;
+    font-style: normal;
+    padding-top: 20px;
+}
+.contact_icons{
+    display: flex;
+    padding-left:40px ;
+}
+.contact_icons i{
+    padding: 10px;
+    font-style: 50px;
+}
+.sub_container form{
+    font-family: 'Raleway',sans-serif;
+}
+
+.sub_container form .form-row{
+    display: flex;
+    margin: 32px 0;
+}
+
+form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+    border:none;
+}
+
+form .form-row .textarea{
+    height: 70px;
+}
+  
+.input-data input,
+.textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(0,0,0, 0.12);
+}
+
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 14px;
+    font-weight: 600;
+    color: #08757A;
+}
+  
+.textarea textarea{
+    resize: none;
+    padding-top: 10px;
+}
+  
+.input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+.textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+}
+  
+.input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+  
+.input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #08757A;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  
+}
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before,
+  .textarea textarea:focus ~ .underline:before,
+  .textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+    border :none !important;
+}
+  .submit-btn .input-data{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 45px!important;
+    width: 25%!important;
+    border-radius: 50px;
+    background-color: #08757A;
+  }
+  .submit-btn:hover .input-data:hover .inner{
+    left: 0;
+    background-color: #191919;
+}
+
+.submit-btn .input-data input{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
